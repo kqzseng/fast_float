@@ -1,6 +1,6 @@
 [package]
 name = "qtx_float"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["zhengkq <lovezkq@gmail.com>"]
 description = "A zero-allocation, high-performance fixed-point decimal library optimized for financial and high-frequency trading data."
@@ -10,6 +10,9 @@ license = "MIT OR Apache-2.0"
 keywords = ["fixed-point", "financial", "high-performance", "decimal", "trading"]
 categories = ["data-structures", "science"]
 [dependencies]
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde_json = "1.0.151"
+sqlx = { version = "0.8", features = ["postgres", "mysql", "macros"], optional = true }
 
 [profile.release]
 opt-level = 3
@@ -17,3 +20,8 @@ lto = true
 codegen-units = 1
 panic = "abort"
 strip = true
+
+[features]
+ser = ["serde"]
+pgsql = ["dep:sqlx"]
+mysql = ["dep:sqlx"]

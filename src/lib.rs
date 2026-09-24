@@ -9,3 +9,11 @@ pub use core::Float;
 pub mod core;
 pub mod ops;
 pub mod parse;
+pub mod macros;
+
+#[cfg(feature = "ser")]
+pub mod serialize;
+#[cfg(feature = "pgsql")]
+pub mod pgsql;
+#[cfg(feature = "mysql")]
+pub mod mysql;
