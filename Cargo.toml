@@ -1,5 +1,5 @@
 [package]
-name = "fast_float"
+name = "qtx_float"
 version = "0.1.0"
 edition = "2021"
 authors = ["zhengkq <lovezkq@gmail.com>"]

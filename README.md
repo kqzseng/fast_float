@@ -1,4 +1,4 @@
-# fast_float
+# qtx_float
 
 [![Crates.io](https://shields.io)](https://crates.io)
 [![Documentation](https://docs.rs)](https://docs.rs)
@@ -23,7 +23,7 @@
 
 ```toml
 [dependencies]
-fast_float = "0.1.0"
+qtx_float = "0.1.0"
 ```
 
 ## 🛠️ 快速上手示例
@@ -31,7 +31,7 @@ fast_float = "0.1.0"
 ### 1. 极致性能解析与防失真
 
 ```rust
-use fast_float::Float;
+use qtx_float::Float;
 
 fn main() {
     // 从十进制字符串解析
