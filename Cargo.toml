@@ -1,6 +1,6 @@
 [package]
 name = "qtx_float"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["zhengkq <lovezkq@gmail.com>"]
 description = "A zero-allocation, high-performance fixed-point decimal library optimized for financial and high-frequency trading data."
